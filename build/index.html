@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-slate-100 min-h-[200vh]">
+
+    <!-- <body class="bg-slate-900 min-h-[200vh]">
+ -->
+
+    <!-- ADD LATER: FIXED POSITION ABOVE WHEN OUT OF SCREEN -->
+    <header class="flex flex-row justify-between items-center bg-white
+    m-4  shadow-lg cursor-default">
+        <div class="flex flex-row py-5 px-3 items-center font-bold font-mono">
+            <img src="Images/MjOnly-LogoPurple.png" alt="Mj-Logo" class="rounded-full size-10 cursor-pointer">
+            <h3 class="mx-3 text-nowrap text-2xl ">Marc Jersey</h3>
+        </div>
+
+        <nav class="w-[40rem]">
+            <ul class="flex flex-row justify-around text-xl font-semibold ">
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out ">Home</li>
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">About</li>
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">Skills</li>
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">Projects</li>
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">Contact</li>
+            </ul>
+        </nav>
+
+        <div class="">
+            <ul class="flex flex-row gap-3 p-5 text-2xl text-indigo-600">
+                <li class="cursor-pointer"><i class="fa-brands fa-square-instagram"></i></li>
+                <li class="cursor-pointer"><i class="fa-brands fa-linkedin"></i></li>
+                <li class="cursor-pointer"><i class="fa-brands fa-square-github"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="mx-4">
+        <section id="home" class="flex flex-row justify-between items-center ">
+            <img src="Images/MainPicture.jpg" alt="Profile Picture"
+                class="rounded-full size-[40rem] object-cover flex-shrink-0  my-14 border-double border-[4px] border-indigo-600">
+
+
+            <div class="p-6 mx-9">
+                <h1 class=" text-2xl">Hi! I am <span class="text-nowrap text-4xl">Marc Jersey Castro</span></h1>
+                <p class=" text-2xl">an aspiring full stack developer with experience in web development and game
+                    development. </p>
+                <p class="my-3 text-2xl">My goal is to continue building innovative applications and improving my skills
+                    to
+                    become a
+                    well-rounded
+                    full stack developer.</p>
+
+                <div class="flex flex-row gap-6 my-7">
+                    <button class="bg-indigo-600 px-5 py-3  rounded-3xl text-white font-semibold">Contact
+                        Me</button>
+
+                    <button
+                        class="border-indigo-600 border-[3px] px-5 py-3  rounded-3xl text-indigo-700 font-semibold">View
+                        Resume</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
