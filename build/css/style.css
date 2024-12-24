@@ -616,6 +616,18 @@ video {
   height: 1px;
 }
 
+.h-\[5px\] {
+  height: 5px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-\[3px\] {
+  height: 3px;
+}
+
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
@@ -924,12 +936,6 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover\:scale-150:hover {
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover {
