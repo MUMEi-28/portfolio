@@ -13,13 +13,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" href="./Images/MjOnly-LogoPurple.png">
+
+    <script src="index.js" defer></script>
 </head>
 
 <body class="bg-slate-100 ">
 
-
     <header
-        class="flex flex-row justify-between items-center bg-white shadow-lg cursor-default fixed top-8 left-1/2 transform -translate-x-1/2 w-[90%] z-20">
+        class="lg:flex hidden flex-row justify-between items-center bg-white shadow-lg cursor-default fixed top-8 left-1/2 transform -translate-x-1/2 w-[90%] z-20">
 
         <div class="flex flex-row py-5 px-3 items-center font-bold font-mono">
             <img src="Images/MjOnly-LogoPurple.png" alt="Mj-Logo" class="rounded-full size-10 cursor-pointer">
@@ -42,7 +43,6 @@
             </ul>
         </nav>
 
-
         <div class="">
             <ul class="flex flex-row gap-3 p-5 text-2xl text-indigo-600">
                 <li class="cursor-pointer"> <a target="_blank" href="https://www.instagram.com/_jersey.45/"><i
@@ -55,8 +55,42 @@
         </div>
     </header>
 
+    <button id="menu-toggle" class="lg:hidden fixed top-8 left-8 z-30 p-2 bg-indigo-600 text-white rounded">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div id="sidebar" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-20">
+        <div class="w-64 bg-white h-full shadow-lg">
+            <div class="p-5 flex flex-row items-center font-bold font-mono">
+                <img src="Images/MjOnly-LogoPurple.png" alt="Mj-Logo" class="rounded-full size-10 cursor-pointer">
+                <h3 class="mx-3 text-nowrap text-2xl text-indigo-600">Marc Jersey</h3>
+            </div>
+            <nav>
+                <ul class="text-lg font-semibold text-indigo-600">
+                    <li class="py-3 px-5 hover:bg-indigo-100"><a href="#home">Home</a></li>
+                    <li class="py-3 px-5 hover:bg-indigo-100"><a href="#skills">Skills</a></li>
+                    <li class="py-3 px-5 hover:bg-indigo-100"><a href="#projects">Projects</a></li>
+                    <li class="py-3 px-5 hover:bg-indigo-100"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="">
+                <ul class="flex flex-row gap-3 p-5 text-2xl text-indigo-600">
+                    <li class="cursor-pointer"> <a target="_blank" href="https://www.instagram.com/_jersey.45/"><i
+                                class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class="cursor-pointer"><a target="_blank"
+                            href="https://www.linkedin.com/in/marc-jersey-castro/"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="cursor-pointer"><a target="_blank" href="https://github.com/MUMEi-28"><i
+                                class="fa-brands fa-square-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <main class="mx-8">
-        <section id="home" class="flex flex-row justify-between items-center min-h-[90vh]">
+        <section id="home"
+            class="flex flex-col lg:mt-[5rem] lg:flex-row justify-between items-center min-h-[90vh] scroll-m-[10rem]">
             <img src="Images/MainPicture.jpg" alt="Profile Picture"
                 class="rounded-full size-[34rem] object-cover flex-shrink-0  my-14 border-double border-[4px] border-indigo-600">
 
@@ -276,25 +310,31 @@
 
         <div class="h-[3px] bg-gradient-to-r from-transparent via-indigo-700 to-transparent  w-full "> </div>
 
-        <section id="projects" class="my-14 mx-4 scroll-m-[10rem]">
+        <section id="projects" class="my-14 mx-4 scroll-m-[10rem] ">
 
             <div class="flex flex-row items-center gap-4 my-6">
                 <div class="size-14 bg-indigo-600 rounded-full"></div>
                 <h1 class="text-4xl font-semibold">Projects</h1>
             </div>
 
-            <div class="grid grid-cols-2 gap-6">
+            <div class="flex flex-col justify-center items-center lg:grid grid-cols-2 gap-6">
 
-                <div class=" bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
-                    <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Basic Calculator</h1>
+                <div
+                    class="  h-[30rem] flex flex-col justify-between bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
+                    <div>
+
+                        <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Basic Calculator</h1>
 
 
-                    <h3 class="text-xl my-3 font-extralight font-mono">A web-based calculator that supports basic
-                        arithmetic Built
-                        using
-                        HTML,
-                        CSS and JavaScript for responsive design, it ensures real-time updates and a
-                        smooth user experience across all devices. Perfect for enhancing web development skills.</h3>
+                        <h3 class="text-xl my-3 font-extralight font-mono">A web-based calculator that supports basic
+                            arithmetic Built
+                            using
+                            HTML,
+                            CSS and JavaScript for responsive design, it ensures real-time updates and a
+                            smooth user experience across all devices. Perfect for enhancing web development skills.
+                        </h3>
+                    </div>
+
 
                     <div class="my-8">
                         <a href="https://github.com/MUMEi-28/Basic-Calculator"
@@ -307,11 +347,16 @@
                     </div>
                 </div>
 
-                <div class="bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
-                    <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Rocket Explorer</h1>
-                    <h3 class="text-xl my-3 font-extralight font-mono">A parallax landing page about travelling outer
-                        space. Built with HTML, CSS, and JavaScript, it's a great way to
-                        practice web development.</h3>
+                <div
+                    class="h-[30rem] flex flex-col justify-between bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
+                    <div>
+
+                        <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Rocket Explorer</h1>
+                        <h3 class="text-xl my-3 font-extralight font-mono">A parallax landing page about travelling
+                            outer
+                            space. Built with HTML, CSS, and JavaScript, it's a great way to
+                            practice web development.</h3>
+                    </div>
 
                     <div class="my-8">
                         <a href="https://github.com/MUMEi-28/Rocket-Exploration"
@@ -324,14 +369,20 @@
                     </div>
                 </div>
 
-                <div class="bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
-                    <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">CCS The Broswer Website
-                    </h1>
-                    <h3 class="text-xl my-3 font-extralight font-mono">A dynamic news platform built with PHP, CSS, and
-                        MySQL. Features a modern, responsive design for seamless navigation and real-time updates,
-                        delivering engaging content efficiently.
+                <div
+                    class="h-[30rem] flex flex-col justify-between bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
+                    <div>
 
-                    </h3>
+                        <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">CCS The Broswer
+                            Website
+                        </h1>
+                        <h3 class="text-xl my-3 font-extralight font-mono">A dynamic news platform built with PHP, CSS,
+                            and
+                            MySQL. Features a modern, responsive design for seamless navigation and real-time updates,
+                            delivering engaging content efficiently.
+
+                        </h3>
+                    </div>
 
                     <div class="my-8">
                         <a href="https://github.com/MUMEi-28/CCS-The-Browser-Website"
@@ -344,13 +395,19 @@
                     </div>
                 </div>
 
-                <div class="bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
-                    <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Tailwind Pricing Cards
-                    </h1>
-                    <h3 class="text-xl my-3 font-extralight font-mono">A modern website showcasing pricing
-                        cards, created with HTML and Tailwind CSS. responsive design that highlights
-                        various pricing options, perfect for businesses looking to present their services effectively
-                        and attractively.</h3>
+                <div
+                    class="h-[30rem] flex flex-col justify-between bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
+                    <div>
+
+                        <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Tailwind Pricing
+                            Cards
+                        </h1>
+                        <h3 class="text-xl my-3 font-extralight font-mono">A modern website showcasing pricing
+                            cards, created with HTML and Tailwind CSS. responsive design that highlights
+                            various pricing options, perfect for businesses looking to present their services
+                            effectively
+                            and attractively.</h3>
+                    </div>
 
                     <div class="my-8">
                         <a href="https://github.com/MUMEi-28/tailwind-pricing-cards"

@@ -9,3 +9,19 @@
         animation-play-state: paused;
     }
 }
+/* Sidebar hidden by default */
+#sidebar {
+    display: none;
+}
+
+/* Show the sidebar when active */
+#sidebar.active {
+    display: flex;
+}
+
+/* Small screen adjustments */
+@media (max-width: 1024px) {
+    header {
+        display: none;
+    }
+}
