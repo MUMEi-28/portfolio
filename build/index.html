@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -17,28 +17,39 @@
 
 
     <!-- ADD LATER: FIXED POSITION ABOVE WHEN OUT OF SCREEN -->
-    <header class="flex flex-row justify-between items-center bg-white
-    m-4  shadow-lg cursor-default">
+    <header
+        class="flex flex-row justify-between items-center bg-white shadow-lg cursor-default fixed top-8 left-1/2 transform -translate-x-1/2 w-[90%] z-20">
+
         <div class="flex flex-row py-5 px-3 items-center font-bold font-mono">
             <img src="Images/MjOnly-LogoPurple.png" alt="Mj-Logo" class="rounded-full size-10 cursor-pointer">
             <h3 class="mx-3 text-nowrap text-2xl ">Marc Jersey</h3>
         </div>
-
         <nav class="w-[40rem]">
-            <ul class="flex flex-row justify-around text-xl font-semibold ">
-                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out ">Home</li>
-                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">About</li>
-                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">Skills</li>
-                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">Projects</li>
-                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">Contact</li>
+            <ul class="flex flex-row justify-around text-xl font-semibold">
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">
+                    <a href="#home">Home</a>
+                </li>
+                <li class=" cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="cursor-pointer hover:text-indigo-700 transition duration-300 ease-in-out">
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
 
+
         <div class="">
             <ul class="flex flex-row gap-3 p-5 text-2xl text-indigo-600">
-                <li class="cursor-pointer"><i class="fa-brands fa-square-instagram"></i></li>
-                <li class="cursor-pointer"><i class="fa-brands fa-linkedin"></i></li>
-                <li class="cursor-pointer"><i class="fa-brands fa-square-github"></i></li>
+                <li class="cursor-pointer"> <a target="_blank" href="https://www.instagram.com/_jersey.45/"><i
+                            class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="cursor-pointer"><a target="_blank" href="https://www.linkedin.com/in/marc-jersey-castro/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li class="cursor-pointer"><a target="_blank" href="https://github.com/MUMEi-28"><i
+                            class="fa-brands fa-square-github"></i></a></li>
             </ul>
         </div>
     </header>
@@ -74,7 +85,7 @@
 
         <div class="h-[3px] bg-gradient-to-r from-transparent via-indigo-700 to-transparent  w-full"> </div>
 
-        <section id="skills" class="py-4 my-20">
+        <section id="skills" class="py-4 my-20 scroll-m-[25rem]">
             <h1 class="text-center text-[2em] bg-indigo-600 w-32 mx-auto my-5 rounded-lg text-white py-1">Skills</h1>
 
             <div class="overflow-hidden flex space-x-16 py-2 group">
@@ -264,7 +275,7 @@
 
         <div class="h-[3px] bg-gradient-to-r from-transparent via-indigo-700 to-transparent  w-full "> </div>
 
-        <section id="Projects" class="my-14 mx-4">
+        <section id="projects" class="my-14 mx-4 scroll-m-[10rem]">
 
             <div class="flex flex-row items-center gap-4 my-6">
                 <div class="size-14 bg-indigo-600 rounded-full"></div>
@@ -296,16 +307,16 @@
                 </div>
 
                 <div class="bg-indigo-50 px-6 py-2 border-solid border-slate-200 border-2 shadow-xl">
-                    <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Rock Paper Scissors</h1>
-                    <h3 class="text-xl my-3 font-extralight font-mono">A fun web-based game where you can play Rock
-                        Paper Scissors against the computer. Built with HTML, CSS, and JavaScript, it’s a great way to
-                        practice web development and game logic skills.</h3>
+                    <h1 class="text-3xl my-3 font-semibold border-b-2 border-indigo-600 py-3 ">Rocket Explorer</h1>
+                    <h3 class="text-xl my-3 font-extralight font-mono">A parallax landing page about travelling outer
+                        space. Built with HTML, CSS, and JavaScript, it's a great way to
+                        practice web development.</h3>
 
                     <div class="my-8">
-                        <a href="https://github.com/MUMEi-28/rock-paper-scissors"
+                        <a href="https://github.com/MUMEi-28/Rocket-Exploration"
                             class=" bg-indigo-600 text-white px-6 py-3 rounded-lg" target="_blank">Github</a>
 
-                        <a href="https://mumei-28.github.io/rock-paper-scissors/"
+                        <a href="https://raw.githack.com/MUMEi-28/Rocket-Exploration/refs/heads/main/build/index.html"
                             class="border-indigo-600 border-[3px] px-6 py-3  rounded-lg text-indigo-700 font-semibold"
                             target="_blank">Open</a>
 
